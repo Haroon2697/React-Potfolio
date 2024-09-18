@@ -41,7 +41,7 @@ const Hero = () => {
               initial="hidden" // Set the initial state
               animate={isInView ? 'visible' : 'hidden'}
 
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
             >
               Haroon Aziz
             </motion.h1>
@@ -60,16 +60,16 @@ const Hero = () => {
                   variants={container(1)} // Set the variants
                   initial="hidden" // Set the initial state
                   animate={isInView ? 'visible' : 'hidden'}
-                  className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
+                  className="my-2 max-w-xl py-6 font-light tracking-tighter md:w-86">{HERO_CONTENT}</motion.p>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
+          <div className="flex  justify-center">
             <motion.img       ref={ref} // Attach the ref to the motion.h1
               variants={container(1.5)} // Set the variants
               initial="hiddenright" // Set the initial state
               animate={isInView ? 'imgvisible' : 'hiddenright'}
-              className="rounded-lg brightness-75" src={profilePic} alt="Haroon Aziz" />
+              className="w-96 rounded-lg brightness-75" src={profilePic} alt="Haroon Aziz" />
           </div>
         </div>
       </div>
